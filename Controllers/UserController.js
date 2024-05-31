@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import { google } from "googleapis";
 import "dotenv/config";
 
-const oauth2Client = new google.auth.OAuth2(process.env.GOOGLE_CLINET_ID, process.env.GOOGLE_CLIENT_SECRET, "http://localhost:5173");
+const oauth2Client = new google.auth.OAuth2(process.env.GOOGLE_CLINET_ID, process.env.GOOGLE_CLIENT_SECRET, "https://blackboard-evallo.vercel.app/");
 
 export const Login = async (req, res) => {
   const { accessToken } = req.body;
