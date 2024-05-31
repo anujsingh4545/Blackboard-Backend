@@ -9,7 +9,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: "https://blackboard-evallo.vercel.app/",
+    origin: "*",
   })
 );
 app.use(express.json());
